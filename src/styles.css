@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+nav {
+    background-image: url("../src/assets/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+      border-radius: 25px;
+      border: 2px solid #73AD21;
+      padding: 20px;
+
+    }
+
+    header {
+      border-radius: 25px;
+      border: 2px solid #73AD21;
+      padding: 20px;
+      font-size:x-large;
+      font-family:monospace;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      font-size: 28px;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      background: #314652;
+      color: #f1f1f1;
+      border-radius: 50%;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+      transition: all .4s ease-in-out;
+    }
+   
+    .abajo{
+      margin-inline-end: auto;
+    }
+
+    section {
+      border-radius: 25px;
+      border: 2px solid #73AD21;
+      padding: 20px;
+    }    
+
+    article {
+      border-radius: 25px;
+      border: 2px solid #73AD21;
+      padding: 20px;
+    }    

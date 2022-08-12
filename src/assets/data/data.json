@@ -1,0 +1,68 @@
+{
+    "nombre": "Garcia Victoria de los Angeles",
+    "imagen": "../assets/foto.png",
+    "titulo": "Analista Programadora",
+    "ubicacion": "La Plata, Buenos Aires, Argentina",
+    "facebook":"https://www.facebook.com/gabiperaltaYvicogarcia",
+    "twitter":"https://twitter.com/vico_pincha",
+    "github":"https://github.com/vicogarcia",
+    "linkedin":"https://www.linkedin.com/in/victoria-garcia-21849b15b/",
+    "instagram":"https://www.instagram.com/vico.pincha/",
+    "experiencia":[{
+        "puesto": "Estadistica",
+        "lugar": "Ministerio de Seguridad, Provincia de Buenos Aires",
+        "ubicacion":"La Plata, Buenos Aires, Argentina",
+        "imagen":"https://seguridad.gba.gob.ar/assets/images/logo_ministerio.svg",
+        "inicio":"2010",
+        "fin": "actualidad"
+    }],
+    "educacion":[{
+        "titulo":"Bachiller con orientacion en Cs. Naturales",
+        "lugar":"E.E.M. Nº33 Ex Normal 2",
+        "ubicacion":"La Plata, Buenos Aires, Argentina",
+        "imagen":"https://scontent.flpg3-1.fna.fbcdn.net/v/t1.6435-9/100090075_564754557574419_6879276511304613888_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeE1eyxcGnWmV_8Q8hIXurChdrxIlzscJeZ2vEiXOxwl5gBgLa3hFkhH0jffATqFleTPTQE6_u3TZbosQIMDaIbZ&_nc_ohc=toru2ufnJwwAX9oLDHT&_nc_ht=scontent.flpg3-1.fna&oh=00_AT_cCobcez1xO6Lt4yvc38IFJeVxlDFG-sbsz71gw-MhJg&oe=628CE5C4",
+        "inicio":"2004",
+        "fin":"2006"
+        },
+        {
+        "titulo":"Operador de PC",
+        "lugar":"C.F.P. Nº401 ",
+        "ubicacion":"Berisso, Buenos Aires, Argentina",
+        "imagen":"https://scontent.flpg3-1.fna.fbcdn.net/v/t39.30808-6/274350552_1992257997643341_7890380727630853250_n.jpg?_nc_cat=108&ccb=1-6&_nc_sid=09cbfe&_nc_eui2=AeH9b_tVb1DD3xTHkIRNfGV-z5QO3nlqWuHPlA7eeWpa4cYwWxdSXsm1XONjB48Dc5bPwhK9G5bbYQTKwMGow5fK&_nc_ohc=zi37EhZ5xwIAX9w1lcL&_nc_ht=scontent.flpg3-1.fna&oh=00_AT91p2UqUo52Ee79F60qlgoDuSyV78jEoZkWYJGIlvFyqg&oe=62896D24",
+        "inicio":"2008",
+        "fin":"2008"    
+        },
+        {
+        "titulo":"Reparador de PC",
+        "lugar":"C.F.P. Nº401 ",
+        "ubicacion":"Berisso, Buenos Aires, Argentina",
+        "imagen":"https://scontent.flpg3-1.fna.fbcdn.net/v/t39.30808-6/274350552_1992257997643341_7890380727630853250_n.jpg?_nc_cat=108&ccb=1-6&_nc_sid=09cbfe&_nc_eui2=AeH9b_tVb1DD3xTHkIRNfGV-z5QO3nlqWuHPlA7eeWpa4cYwWxdSXsm1XONjB48Dc5bPwhK9G5bbYQTKwMGow5fK&_nc_ohc=zi37EhZ5xwIAX9w1lcL&_nc_ht=scontent.flpg3-1.fna&oh=00_AT91p2UqUo52Ee79F60qlgoDuSyV78jEoZkWYJGIlvFyqg&oe=62896D24",
+        "inicio":"2008",
+        "fin":"2008"    
+        },
+        {
+        "titulo":"Instalacion y Reparacion de Redes",
+        "lugar":"C.F.P. Nº401 ",
+        "ubicacion":"Berisso, Buenos Aires, Argentina",
+        "imagen":"https://scontent.flpg3-1.fna.fbcdn.net/v/t39.30808-6/274350552_1992257997643341_7890380727630853250_n.jpg?_nc_cat=108&ccb=1-6&_nc_sid=09cbfe&_nc_eui2=AeH9b_tVb1DD3xTHkIRNfGV-z5QO3nlqWuHPlA7eeWpa4cYwWxdSXsm1XONjB48Dc5bPwhK9G5bbYQTKwMGow5fK&_nc_ohc=zi37EhZ5xwIAX9w1lcL&_nc_ht=scontent.flpg3-1.fna&oh=00_AT91p2UqUo52Ee79F60qlgoDuSyV78jEoZkWYJGIlvFyqg&oe=62896D24",
+        "inicio":"2008",
+        "fin":"2008"    
+        },
+        {
+        "titulo":"Diseño Grafico",
+        "lugar":"C.F.P. Nº401 ",
+        "ubicacion":"Berisso, Buenos Aires, Argentina",
+        "imagen":"https://scontent.flpg3-1.fna.fbcdn.net/v/t39.30808-6/274350552_1992257997643341_7890380727630853250_n.jpg?_nc_cat=108&ccb=1-6&_nc_sid=09cbfe&_nc_eui2=AeH9b_tVb1DD3xTHkIRNfGV-z5QO3nlqWuHPlA7eeWpa4cYwWxdSXsm1XONjB48Dc5bPwhK9G5bbYQTKwMGow5fK&_nc_ohc=zi37EhZ5xwIAX9w1lcL&_nc_ht=scontent.flpg3-1.fna&oh=00_AT91p2UqUo52Ee79F60qlgoDuSyV78jEoZkWYJGIlvFyqg&oe=62896D24",
+        "inicio":"2008",
+        "fin":"2008"    
+        },
+        {
+        "titulo":"Analista Programador Universitario",
+        "lugar":"Facultad de Informatica, UNLP",
+        "ubicacion":"La Plata, Buenos Aires, Argentina",
+        "imagen":"https://www.info.unlp.edu.ar/wp-content/uploads/2020/01/cropped-cabeceraweb.jpg",
+        "inicio":"2009",
+        "fin":"2022"  
+        }
+    ]
+}

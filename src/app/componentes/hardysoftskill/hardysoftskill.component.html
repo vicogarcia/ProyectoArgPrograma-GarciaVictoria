@@ -1,0 +1,45 @@
+<section>
+    <div>	
+        <img src="../../../assets/hardysoftskills-logo.png" width="400 px" height="200 px">
+    </div>
+
+    <div class="col-lg-2">
+      <button type="button" class="btn btn-dark" routerLink="/nuevaSkill" *ngIf="isLogged">
+        Agregar Skill  
+      </button>
+    </div>
+    <br>
+
+
+
+    <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let hys of hys">
+      <circle-progress 
+      [percent]="(hys.porcentaje)" 
+      [radius]="90" [imageSrc]="''" 
+      [title]="(hys.nombre)"
+      [titleColor]="'#212F3C'"
+      [showTitle]="true" 
+      [showImage]="false" 
+      [imageHeight]="70" 
+      [imageWidth]="70" 
+      [showUnits]="false"
+      [showSubtitle]="false" 
+      [outerStrokeWidth]="16" 
+      [innerStrokeWidth]="2" 
+      [outerStrokeColor]="'#78C000'"
+      [innerStrokeColor]="'#C7E596'" 
+      [animation]="true" 
+      [animationDuration]="600">
+      </circle-progress>
+
+        <div *ngIf="isLogged">
+          <button class="btn btn-dark" routerLink="/editHyS/{{hys.id}}">
+              <i class="bi bi-pencil-fill"></i> Editar
+          </button>
+          &nbsp;
+          <button class="btn btn-dark" (click)="delete(hys.id)">
+              <i class="bi bi-trash-fill"></i> Borrar
+          </button>
+        </div>  
+    </div>
+</section>

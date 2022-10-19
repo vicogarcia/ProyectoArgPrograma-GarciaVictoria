@@ -64,5 +64,13 @@
         "inicio":"2009",
         "fin":"2022"  
         }
-    ]
+    ],
+    "proyecto":[{
+        "nombre": "Lista de Tareas",
+        "descripcion": "proyecto realizado para argentina programa 2022",
+        "link":"La Plata, Buenos Aires, Argentina",
+        "imagen":"https://seguridad.gba.gob.ar/assets/images/logo_ministerio.svg",
+        "inicio":"2022",
+        "fin": "actualidad"
+    }]
 }

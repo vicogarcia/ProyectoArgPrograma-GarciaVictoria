@@ -1,0 +1,47 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <div class="mb-md-5 mt-md-4 pb-5">
+                <h2 class="fw-bold mb-2 text-uppercase">Nuevo Proyecto</h2>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombrePro">Nombre del Proyecto</label>
+                    <input type="text" class="form-control" id="nombrePro" name="nombrePro" [(ngModel)]="nombrePro" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripPro">Descripcion del Proyecto</label>
+                    <input type="text" class="form-control" id="descripPro" name="descripPro" [(ngModel)]="descripPro" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="link">Link</label>
+                    <input type="text" class="form-control" id="link" name="link" [(ngModel)]="link" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="anio">Año</label>
+                    <input type="number" class="form-control" id="anio" name="anio" [(ngModel)]="anio" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="imagen">Imagen</label>
+                    <input type="text" class="form-control" id="imagen" name="imagen" [(ngModel)]="imagen" required>
+                </div>
+                <br>
+                <button class="btn btn-outline-light btn-lg px-5">
+                    Agregar Proyecto
+                </button>
+            </form>
+        </div>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>

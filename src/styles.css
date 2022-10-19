@@ -1,18 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
-nav {
-    background-image: url("../src/assets/fondo2.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-      border-radius: 25px;
-      border: 2px solid #73AD21;
-      padding: 20px;
-
-    }
 
     header {
-      border-radius: 25px;
-      border: 2px solid #73AD21;
-      padding: 20px;
       font-size:x-large;
       font-family:monospace;
     }
@@ -29,12 +16,12 @@ nav {
       border-radius: 50%;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
       transition: all .4s ease-in-out;
+      margin: 0.2em;
     }
    
     .abajo{
       margin-inline-end: auto;
     }
-
     section {
       border-radius: 25px;
       border: 2px solid #73AD21;
@@ -45,4 +32,15 @@ nav {
       border-radius: 25px;
       border: 2px solid #73AD21;
       padding: 20px;
-    }    
+    } 
+
+    .gradient-custom {
+      /* fallback for old browsers */
+      background: #B5B2B2;
+      
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: -webkit-linear-gradient(to right, rgb(181,178, 178), rgb(181,178, 178));
+      
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(to right, rgb(181,178, 178), rgb(181,178, 178))
+      }

@@ -1,28 +1,41 @@
 <section id="educacion">
     <div>	
-        <img src="../../../assets/edu.jpg" width="200 px" height="200 px">
+        <img src="../../../assets/educacion-logo.png" width="400 px" height="200 px">
     </div>
-    <div class="align-items-center d-flex pt-3 my-3 p-3 bg-body rounded shadow-sm">
-        <h3 class="border-bottom pb-2 mb-0 text-black fw-bold">Educación</h3>
-        
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaEdu" *ngIf="isLogged">
+          Agregar Educacion  
+        </button>
     </div>
-    <ul class="items-list">
-        <li *ngFor="let educacion of educacionLista">
-            <div class="data-container">
-                <a href="#">
-                    <div class="logo-image-container">
-                        <img class="logo-image" [src]="educacion.imagen" width="400 px" height="200 px"/>
-                    </div>
-                    <div class="list-info">
-                        <div>
-                            <h4>{{educacion.titulo}}</h4>
-                            <p>{{educacion.lugar}}</p>
-                            <p>{{educacion.ubicacion}}</p>
-                            <p><time>{{educacion.inicio}}</time> - <time>{{educacion.fin}}</time></p>
+    <br>
+    <div class="row">
+            <div class="col-lg-6 mb-4" *ngFor="let educacion of educacion">
+                <div class="card bg-light border-dark mb-3">
+                    <img class="card-img-top" [src]="educacion.imagen" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">{{educacion.nombreEdu}}</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">{{educacion.institucion}}</li>
+                            <li class="list-group-item">{{educacion.ubicacion}}</li>
+                            <li class="list-group-item"><time>{{educacion.fechaInicio}}</time> - <time>{{educacion.fechaFin}}</time></li>
+                        </ul>
+                        <br>
+                        <div *ngIf="isLogged">
+                        
+                            <button class="btn btn-dark" routerLink="/editEdu/{{educacion.id}}">
+                                <i class="bi bi-pencil-fill"></i> Editar
+                            </button>
+                            &nbsp;
+                        
+                            <button class="btn btn-dark" (click)="delete(educacion.id)">
+                                <i class="bi bi-trash-fill"></i> Borrar
+                            </button>
+                        
                         </div>
-                    </div>
-                </a>
+                    </div>    
+                </div>
             </div>
-        </li>
-    </ul>
+    </div>
+
+          
 </section>

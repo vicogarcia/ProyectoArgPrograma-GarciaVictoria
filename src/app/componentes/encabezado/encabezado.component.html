@@ -1,18 +1,22 @@
-<header class="p-3 bg-dark text-white">
+<div class="p-3 bg-dark text-white">
     <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0">
-            Mi Portfolio Web
-            </ul>
+            <div class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0">
+                <img src="../../../assets/APLogo.png" id="logoAP">
+            </div>
             <div class="buttons">
-                <a [href]="miPortfolio.facebook" target="_blank" class="fa fa-facebook"></a>
-                <a [href]="miPortfolio.twitter" target="_blank" class="fa fa-twitter"></a>
-                <a [href]="miPortfolio.github" target="_blank" class="fa fa-github"></a>
-                <a [href]="miPortfolio.linkedin" target="_blank" class="fa fa-linkedin"></a>
-                <a [href]="miPortfolio.instagram" target="_blank" class="fa fa-instagram"></a>
+                <a [href]="" target="_blank" class="fa fa-facebook"></a>
+                <a [href]="" target="_blank" class="fa fa-twitter"></a>
+                <a [href]="" target="_blank" class="fa fa-github"></a>
+                <a [href]="" target="_blank" class="fa fa-linkedin"></a>
+                <a [href]="" target="_blank" class="fa fa-instagram"></a>
+            </div>
+            <div>
+                <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+                <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
             </div>
         </div>
     </div>
     
-</header>
+</div>

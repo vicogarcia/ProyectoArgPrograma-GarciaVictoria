@@ -1,0 +1,53 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <div class="mb-md-5 mt-md-4 pb-5">
+                <h2 class="fw-bold mb-2 text-uppercase">Editar experiencia</h2>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreExp">Nombre/Puesto de la experiencia laboral</label>
+                    <input type="text" class="form-control" id="nombreExp" name="nombreExp" [(ngModel)]="explab.nombreExp" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripExp">Descripcion de la experiencia</label>
+                    <input type="text" class="form-control" id="descripExp" name="descripExp" [(ngModel)]="explab.descripExp" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lugar">Lugar/Empresa</label>
+                    <input type="text" class="form-control" id="lugar" name="lugar" [(ngModel)]="explab.lugar" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaInicio">Fecha Inicio</label>
+                    <input type="number" class="form-control" id="fechaInicio" name="fechaInicio" [(ngModel)]="explab.fechaInicio" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaFin">Fecha Fin</label>
+                    <input type="number" class="form-control" id="fechaFin" name="fechaFin" [(ngModel)]="explab.fechaFin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="imagen">Imagen</label>
+                    <input type="text" class="form-control" id="imagen" name="imagen" [(ngModel)]="explab.imagen" required>
+                </div>
+
+                <br>
+                <button class="btn btn-outline-light btn-lg px-5">
+                    Modificar experiencia
+                </button>
+            </form>
+        </div>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>

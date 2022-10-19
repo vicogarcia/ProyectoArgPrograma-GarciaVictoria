@@ -1,28 +1,36 @@
 <section id="experiencia">
     <div>	
-        <img src="../../../assets/descarga (1).jpg" width="200 px" height="200 px">
+        <img src="../../../assets/experiencia-logo.png" width="400 px" height="200 px">
     </div>
-    <div class="align-items-center d-flex pt-3 my-3 p-3 bg-body rounded shadow-sm">
-        <h3 class="border-bottom pb-2 mb-0 text-black fw-bold">Experiencia</h3>
-        
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaExp" *ngIf="isLogged">
+          Agregar experiencia  
+        </button>
     </div>
-    <ul class="items-list">
-        <li *ngFor="let experiencia of experienciaLista">
-            <div class="data-container">
-                <a href="#">
-                    <div class="logo-image-container">
-                        <img class="logo-image" [src]="experiencia.imagen" width="400 px" height="200 px"/>
-                    </div>
-                    <div class="list-info">
-                        <div>
-                            <h4>{{experiencia.puesto}}</h4>
-                            <p>{{experiencia.lugar}}</p>
-                            <p>{{experiencia.ubicacion}}</p>
-                            <p><time>{{experiencia.inicio}}</time> - <time>{{experiencia.fin}}</time></p>
+    <br>
+    <div class="row">
+        <div class="col-lg-6 mb-4" *ngFor="let experiencia of expe">
+            <div class="card bg-light border-dark mb-3">
+                <img class="card-img-top" [src]="experiencia.imagen" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">{{experiencia.nombreExp}}</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">{{experiencia.descripExp}}</li>
+                        <li class="list-group-item">{{experiencia.lugar}}</li>
+                        <li class="list-group-item"><time>{{experiencia.fechaInicio}}</time> - <time>{{experiencia.fechaFin}}</time></li>
+                    </ul>
+
+                        <div *ngIf="isLogged">
+                            <button class="btn btn-dark" routerLink="/editExp/{{experiencia.id}}">
+                                <i class="bi bi-pencil-fill"></i> Editar
+                            </button>
+                            &nbsp;
+                            <button class="btn btn-dark" (click)="delete(experiencia.id)">
+                                <i class="bi bi-trash-fill"></i> Borrar
+                            </button>
                         </div>
-                    </div>
-                </a>
+                </div>
             </div>
-        </li>
-    </ul>
+        </div>
+</div>
 </section>

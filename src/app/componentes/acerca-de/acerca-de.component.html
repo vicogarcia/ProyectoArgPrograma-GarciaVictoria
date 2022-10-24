@@ -1,19 +1,22 @@
-<div align="center">
+<div class="row">
     <br>
-    <div class="col-lg-2">
+    <div>
         <button type="button" class="btn btn-dark" routerLink="/editAcerca-de/1" *ngIf="isLogged">
           Editar Persona  
         </button>
     </div>
-
-    <img [src]="persona.img" width="400 px" height="400 px">
-
-    <h2 class="text-black fw-bold">{{ persona.nombre }} {{ persona.apellido }}</h2>
-
-    <h3 class="text-black fw-bold">Full Stack Developer Jr.</h3>
-
-    <span>
-        <h3 class="text-black fw-bold"> Acerca de mi</h3>
-        <p class="text-black fw-bold">{{persona.descrip}}</p>
-    </span>
-</div>    
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <img [src]="persona.img" class="img-fluid" id="fotodeperfil">
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <h4 id="nombre">{{persona.nombre}} {{persona.apellido}}</h4>
+        <h5>Full Stack Developer Jr</h5>
+    </div>
+    
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 descripcion">
+        <span>
+            <h1>Acerca de mí</h1>
+            <p class="text-black fw-bold">{{persona.descrip}}</p>
+        </span>
+    </div>
+</div> 

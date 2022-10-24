@@ -26,6 +26,9 @@ import { EditproyectoComponent } from './componentes/proyectos/editproyecto.comp
 import { NewHysSkillComponent } from './componentes/hardysoftskill/new-hys-skill.component';
 import { EditHysSkillComponent } from './componentes/hardysoftskill/edit-hys-skill.component';
 import { EditAcercaDeComponent } from './componentes/acerca-de/edit-acerca-de.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 @NgModule({
@@ -58,7 +61,9 @@ import { EditAcercaDeComponent } from './componentes/acerca-de/edit-acerca-de.co
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [interceptorProvider],
   bootstrap: [AppComponent]

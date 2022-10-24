@@ -24,13 +24,13 @@
     }
     section {
       border-radius: 25px;
-      border: 2px solid #73AD21;
+      border: 2px solid red;
       padding: 20px;
     }    
 
     article {
       border-radius: 25px;
-      border: 2px solid #73AD21;
+      border: 2px solid red;
       padding: 20px;
     } 
 
@@ -43,4 +43,13 @@
       
       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       background: linear-gradient(to right, rgb(181,178, 178), rgb(181,178, 178))
+      }
+
+
+      .display-1{
+        font-family: "Brush Script MT", monospace;
+        text-decoration-color: red;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 5px red;
+        
       }

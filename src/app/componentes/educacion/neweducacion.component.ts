@@ -36,4 +36,6 @@ export class NeweducacionComponent implements OnInit {
     
   }
 
+
+
 }

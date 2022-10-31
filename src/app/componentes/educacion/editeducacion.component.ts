@@ -28,7 +28,7 @@ export class EditeducacionComponent implements OnInit {
 
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
-    this.educacion.imagen = this.imageService.url
+      this.educacion.imagen = this.imageService.urlImg;
     this.educacionService.update(id,this.educacion).subscribe(
       data => {
         alert("La educacion se ha modificado correctamente");
@@ -38,11 +38,19 @@ export class EditeducacionComponent implements OnInit {
         this.router.navigate(['']);
       }
     )
+    this.imageService.clearUrl(); 
   }
 
   uploadImage($event:any){
     const id= this.activatedRouter.snapshot.params['id'];
     const name = `educacion_`+ id;
     this.imageService.uploadImage($event, name);
+  }
+
+  cancel(): void {
+
+    this.imageService.clearUrl();
+    this.router.navigate(['']);
+
   }
 }

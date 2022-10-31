@@ -14,11 +14,11 @@
                 <div class="card bg-light border-dark mb-3">
                     <img [src]="educacion.imagen" class="card-img-top" alt="Card image cap">
                     <div class="card-block">
-                        <h4 class="card-title">{{educacion.nombreEdu}}</h4>
+                        <h4 class="card-title"><u>Titulo</u>: {{educacion.nombreEdu}}</h4>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">{{educacion.institucion}}</li>
-                            <li class="list-group-item">{{educacion.ubicacion}}</li>
-                            <li class="list-group-item"><time>{{educacion.fechaInicio}}</time> - <time>{{educacion.fechaFin}}</time></li>
+                            <li class="list-group-item"><u><b>Institucion</b></u>: {{educacion.institucion}}</li>
+                            <li class="list-group-item"><u><b>Ubicacion</b></u>: {{educacion.ubicacion}}</li>
+                            <li class="list-group-item"><time><u><b>Fecha de Inicio</b></u>: {{educacion.fechaInicio}}</time> - <time><u><b>Fecha de Finalizacion</b></u>: {{educacion.fechaFin}}</time></li>
                         </ul>
                         <br>
                         <div *ngIf="isLogged">

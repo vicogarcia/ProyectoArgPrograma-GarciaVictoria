@@ -30,11 +30,21 @@
 
                 <div class="form-group">
                     <label for="imagen">Imagen</label>
-                    <input type="text" class="form-control" id="imagen" name="imagen" [(ngModel)]="imagen" required>
+                    <input type="file" class="form-control" id="imagen" name="imagen" [(ngModel)]="imagen" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png, .svg">
                 </div>
+
+                <br>
+                <div class="imagen">
+                    <img [src]="imageService.urlImg" width="200px">
+                  </div>
                 <br>
                 <button class="btn btn-outline-light btn-lg px-5">
                     Agregar Proyecto
+                </button>
+                <br>
+                <br>
+                <button class="btn btn-outline-light btn-lg px-5" (click)="cancel()">
+                    Cancelar
                 </button>
             </form>
         </div>

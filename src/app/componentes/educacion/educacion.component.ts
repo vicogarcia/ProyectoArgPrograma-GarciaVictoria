@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Educacion } from 'src/app/model/educacion';
 import { EducacionService } from 'src/app/servicios/educacion.service';
+import { ImageService } from 'src/app/servicios/image.service';
 import { TokenService } from 'src/app/servicios/token.service';
 @Component({
   selector: 'app-educacion',
@@ -9,7 +11,7 @@ import { TokenService } from 'src/app/servicios/token.service';
 })
 export class EducacionComponent implements OnInit {
   educacion : Educacion[] = [];
-  constructor(private educacionService: EducacionService, private tokenService: TokenService) { }
+  constructor(private educacionService: EducacionService, private router: Router, private tokenService: TokenService, private imageService: ImageService) { }
   isLogged = false;
 
 

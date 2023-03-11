@@ -6,17 +6,17 @@
         </button>
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img [src]="persona.img" class="img-fluid" id="fotodeperfil">
+        <img [src]="persona?.img" class="img-fluid" id="fotodeperfil">
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <h4 id="nombre">{{persona.nombre}} {{persona.apellido}}</h4>
+        <h4 id="nombre">{{persona?.nombre}} {{persona?.apellido}}</h4>
         <h5>Full Stack Developer Jr</h5>
     </div>
     
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 descripcion">
         <span>
             <h1>Acerca de mí</h1>
-            <p class="text-black fw-bold">{{persona.descrip}}</p>
+            <p class="text-black fw-bold">{{persona?.descrip}}</p>
         </span>
     </div>
 </div> 

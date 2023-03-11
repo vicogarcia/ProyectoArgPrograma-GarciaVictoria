@@ -19,6 +19,7 @@
                         <li class="list-group-item"><u><b>Descripcion</b></u>: {{proyecto.descripPro}}</li>
                         <li class="list-group-item"><u><b>Link</b></u>: <a href={{proyecto.link}}>{{proyecto.link}}</a></li>
                         <li class="list-group-item"><u><b>A&ntilde;o</b></u>: {{proyecto.anio}}</li>
+                    </ul>
                         <br>
                         <div *ngIf="isLogged">
                             <button class="btn btn-dark" routerLink="/editProy/{{proyecto.id}}">
@@ -30,10 +31,10 @@
                             </button>
                         </div>
 
-                    </ul>
+                    
                 </div>
             </div>
         </div>
-</div>
+    </div>
 
 </section>
